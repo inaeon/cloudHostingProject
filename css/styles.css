@@ -81,3 +81,54 @@ a {
     font-size: 1.8rem;
   }
 }
+
+/*Badges Section*/
+
+.badges {
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.badges--primary {
+  background-color: var(--color-primary);
+}
+.badges--secondary {
+  background-color: var(--color-secondary);
+}
+.badges--small {
+  font-size: 1.5rem;
+}
+
+@media and (min-width: 1024px) {
+  .badges {
+    font-size: 1.5rem;
+  }
+
+  .badges--small {
+    font-size: 1.2rem;
+  }
+}
+
+/*Lists Section*/
+.list {
+  list-style: none;
+  color: var(--color-headings);
+  font-size: 2rem;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(/icons/tick.svg);
+}
+
+.list--tick .list__item {
+  padding-left: 2rem;
+}
