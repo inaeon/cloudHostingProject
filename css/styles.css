@@ -154,6 +154,8 @@ a {
   align-items: center;
 }
 
+/*Button Sections*/
+
 .btn {
   border: 0;
   padding: 1rem 3rem;
@@ -162,6 +164,7 @@ a {
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .btn--primary {
@@ -201,4 +204,31 @@ a {
   display: inline-block;
   background-color: var(--color-headings);
   color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    border-radius: 30px;
+    font-size: 1.2rem;
+  }
+}
+
+/*Input Sections */
+
+.input {
+  border-radius: 30px;
+  outline: 0;
+  border: 1px solid #ccc;
+  padding: 1.5rem 3rem;
+}
+
+::placeholder {
+  color: #cddbd7;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  ::placeholder {
+    font-size: 1.5rem;
+  }
 }
