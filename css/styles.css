@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --border-color: #ccc;
+  --border-radius: 30px;
 }
 
 /*Typography section*/
@@ -208,7 +210,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .btn {
-    border-radius: 30px;
+    border-radius: var(--border-radius);
     font-size: 1.2rem;
   }
 }
@@ -216,9 +218,9 @@ a {
 /*Input Sections */
 
 .input {
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   outline: 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   padding: 1.5rem 3rem;
 }
 
@@ -231,4 +233,21 @@ a {
   ::placeholder {
     font-size: 1.5rem;
   }
+}
+
+/* Input-group*/
+
+.input-group {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+}
+
+.input-group .btn {
+  margin: 4px;
 }
