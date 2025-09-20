@@ -318,13 +318,24 @@ a {
 }
 
 .card__popular {
-  width: 10%;
+  width: 40px;
   height: auto;
   position: absolute;
-  right: 4rem;
-  top: 0px;
+  right: 10%;
+  top: -6px;
 }
 
+.media {
+  display: flex;
+  column-gap: 3rem;
+}
+.media__body h3 {
+  margin: 0;
+}
+
+.media__img {
+  margin-top: 1.5rem;
+}
 @media screen and (min-width: 1024px) {
   .card {
     width: 33vw;
