@@ -92,73 +92,121 @@
     <button class="btn btn--primary">Get Started</button>
     <button class="btn btn--secondary">Get Started</button>
     <button class="btn btn--accent">Get Started</button>
-  </body>
-  <div class="input-group">
-    <input
-      class="input"
-      type="text"
-      name=""
-      id=""
-      placeholder="Enter your domain name here ..."
-    />
-    <button class="btn btn--accent">Search</button>
-  </div>
-  <div class="plan">
-    <div class="card">
-      <header class="card__header card--secondary">
-        <img
-          class="card__popular"
-          src="/icons/popular.svg"
-          alt="popular badges"
-        />
-        <h4 class="plan__heading">Entry</h4>
-        <span class="plan__pricing">$14</span>
-        <span class="plan__billing">/month</span>
-        <span class="badges badges--secondary">10% Off</span>
-        <p class="plan__description">Easy start on the cloud</p>
-      </header>
-      <div class="card__body">
-        <ul class="list list--tick">
-          <li class="list__item">Unlmited Websites</li>
-          <li class="list__item">Unlimited Bandwidth 2</li>
-          <li class="list__item">100 GB SSD Storage</li>
-          <li class="list__item">3GB RAM</li>
-        </ul>
-        <button class="btn btn--block">Buy Now</button>
+
+    <div class="input-group">
+      <input
+        class="input"
+        type="text"
+        name=""
+        id=""
+        placeholder="Enter your domain name here ..."
+      />
+      <button class="btn btn--accent">Search</button>
+    </div>
+    <div class="plan">
+      <div class="card">
+        <header class="card__header card--secondary">
+          <img
+            class="card__popular"
+            src="/icons/popular.svg"
+            alt="popular badges"
+          />
+          <h4 class="plan__heading">Entry</h4>
+          <span class="plan__pricing">$14</span>
+          <span class="plan__billing">/month</span>
+          <span class="badges badges--secondary">10% Off</span>
+          <p class="plan__description">Easy start on the cloud</p>
+        </header>
+        <div class="card__body">
+          <ul class="list list--tick">
+            <li class="list__item">Unlmited Websites</li>
+            <li class="list__item">Unlimited Bandwidth 2</li>
+            <li class="list__item">100 GB SSD Storage</li>
+            <li class="list__item">3GB RAM</li>
+          </ul>
+          <button class="btn btn--block">Buy Now</button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="media">
-    <div class="media__img">
-      <svg class="icon icon--primary">
-        <use xlink:href="/icons/sprite.svg#snap"></use>
-      </svg>
-    </div>
-    <div class="media__body">
-      <h3>Easy Start and Managed Updates</h3>
-      <p>
-        Our cloud plan includes easy onboarding for new and existing sites and
-        managed WorldPress and WooComerce auto-updates.
-      </p>
-    </div>
-  </div>
-
-  <blockquote class="quote">
-    <p class="quote__text">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-      nostrum ab culpa neque a consequatur eos illo modi pariatur. Minus.
-    </p>
     <div class="media">
       <div class="media__img">
         <svg class="icon icon--primary">
-          <use xlink:href="/icons/sprite.svg#line"></use>
+          <use xlink:href="/icons/sprite.svg#snap"></use>
         </svg>
       </div>
       <div class="media__body">
-        <h3>Albert John</h3>
-        <p>ABC Technologies</p>
+        <h3>Easy Start and Managed Updates</h3>
+        <p>
+          Our cloud plan includes easy onboarding for new and existing sites and
+          managed WorldPress and WooComerce auto-updates.
+        </p>
       </div>
     </div>
-  </blockquote>
+
+    <blockquote class="quote">
+      <p class="quote__text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
+        nostrum ab culpa neque a consequatur eos illo modi pariatur. Minus.
+      </p>
+      <div class="media">
+        <div class="media__img">
+          <svg class="icon icon--primary">
+            <use xlink:href="/icons/sprite.svg#line"></use>
+          </svg>
+        </div>
+        <div class="media__body">
+          <h3 class="quote__author">Albert John</h3>
+          <p class="quote__company">ABC Technologies</p>
+        </div>
+      </div>
+    </blockquote>
+
+    <div class="grid grid--1x2 grid--1x3">
+      <div class="grid__content-one"></div>
+      <div class="grid__content-two"></div>
+      <div class="grid__content-three"></div>
+    </div>
+
+    <div class="card testimonial">
+      <div class="grid grid--1x2 grid--1x3">
+        <div class="grid__content">
+          <div class="grid__content-one">
+            <img
+              class="testimonial__image"
+              src="/images/testimonial.jpg"
+              alt="a customer"
+            />
+          </div>
+          <div class="quote">
+            <span class="icon-bg icon-testimonial">
+              <svg class="icon icon--accent">
+                <use xlink:href="/icons/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="grid__content-two">
+          <blockquote>
+            <p class="quote__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Temporibus nostrum ab culpa neque a consequatur eos illo modi
+              pariatur. Minus.
+            </p>
+            <div class="media">
+              <div class="media__img media__testimonial">
+                <svg class="icon icon--primary">
+                  <use xlink:href="/icons/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3>Albert John</h3>
+                <p class="quote__company">ABC Technologies</p>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
