@@ -190,7 +190,8 @@ a {
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .btn--primary {
@@ -239,7 +240,7 @@ a {
 @media screen and (min-width: 1024px) {
   .btn {
     border-radius: var(--border-radius);
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -405,7 +406,7 @@ a {
   position: relative;
 }
 
-.quote {
+.quote--testimonial {
   position: absolute;
   right: 20px;
   top: 64px;
@@ -421,5 +422,47 @@ a {
   .grid__content-two {
     padding-top: 8rem;
     padding-left: 0;
+  }
+}
+
+/*Callouts Section*/
+
+.callouts {
+  border-radius: var(--border-radius);
+  padding: 5rem;
+}
+
+.callouts--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.callouts__content {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+.callouts__text {
+  margin: 0;
+}
+
+.callouts__content .callouts__heading {
+  color: #fff;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .callouts .grid-1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callouts .btn {
+    padding: 2rem 6rem;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .callouts__content {
+    text-align: left;
   }
 }
