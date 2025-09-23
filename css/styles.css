@@ -168,7 +168,12 @@ a {
   padding: 0.2rem;
   border-radius: 100%;
 }
-
+.icon--nav {
+  fill: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: border-shadow 0.15s;
+}
 .icon--accent {
   fill: #fff;
 }
@@ -539,4 +544,69 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/*Navigation Section*/
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #000;
+  padding: 2rem 2.5rem;
+}
+
+.nav img {
+  width: 20rem;
+  height: auto;
+}
+.nav__list {
+  width: 100vw;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav a {
+  color: #d2d0db;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.nav__item {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.icon--nav:hover,
+.nav.collapsible--expanded .icon--nav {
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+  fill: #fff;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    padding: 2rem 2rem;
+  }
+  .icon--nav {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    margin-bottom: 0;
+    border-bottom: 0;
+    margin-left: 2.5rem;
+  }
 }
