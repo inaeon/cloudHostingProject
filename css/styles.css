@@ -30,6 +30,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.15;
 }
 
 h1 {
@@ -521,6 +522,10 @@ a {
 .block__heading {
   margin-top: 0;
 }
+
+.block__content {
+  font-size: 2.5rem;
+}
 .block__header {
   text-align: center;
 }
@@ -535,11 +540,11 @@ a {
 }
 
 .block--skewed-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 .block--skewed-left {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 .container {
   max-width: 1140px;
@@ -608,5 +613,33 @@ a {
     margin-bottom: 0;
     border-bottom: 0;
     margin-left: 2.5rem;
+  }
+}
+
+/* Hero Component (Banner Component)*/
+
+.hero__image {
+  width: 100%;
+  align-self: center;
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  padding-bottom: 5rem;
+}
+
+.hero__content .block__content {
+  padding-bottom: 3.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
