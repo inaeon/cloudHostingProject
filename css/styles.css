@@ -95,7 +95,7 @@ a {
 
 .badges {
   border-radius: 20px;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
@@ -103,7 +103,7 @@ a {
 }
 
 .badges--primary {
-  background-color: var(--color-primary);
+  background-color: #222;
 }
 .badges--secondary {
   background-color: var(--color-secondary);
@@ -177,6 +177,15 @@ a {
 }
 .icon--accent {
   fill: #fff;
+}
+
+.icon--search {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon--input {
+  fill: #000;
 }
 
 .icon-bg {
@@ -283,6 +292,7 @@ a {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   display: flex;
+  flex-flow: wrap;
 }
 
 .input-group .input {
@@ -298,6 +308,7 @@ a {
 
 .card {
   width: 100vw;
+
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
@@ -435,6 +446,10 @@ a {
   .grid__content-two {
     padding-top: 8rem;
     padding-left: 0;
+  }
+
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -641,5 +656,56 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/*Domain Section*/
+
+.domain .input-group {
+  margin: 0 4rem;
+  box-shadow: 0 0 30px 20px #e6ebee;
+}
+
+.btn .icon--search {
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50px);
+  margin: 5rem auto;
+}
+
+.domain-grid .list__item {
+  justify-content: center;
+  align-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .domain-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .domain .input-group {
+    margin: 0 35rem;
+  }
+}
+
+/*Plans Section*/
+
+@media screen and (min-width: 768px) {
+  .plans {
+    margin: 2rem auto;
+  }
+  .grid--1x3 {
+    gap: 4rem;
+  }
+  .plans .card {
+    transition: transform 0.5s ease-in;
+  }
+  .plans .card:hover {
+    transform: scale(1.05);
   }
 }
