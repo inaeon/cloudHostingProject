@@ -1,39 +1,29 @@
 <div class="card testimonial">
-  <div class="grid grid--1x2 grid--1x3">
-    <div class="grid__content">
-      <div class="grid__content-one">
-        <img
-          class="testimonial__image"
-          src="/images/testimonial.jpg"
-          alt="a customer"
-        />
-      </div>
-      <div class="quote">
-        <span class="icon-bg icon-testimonial">
-          <svg class="icon icon--accent">
-            <use xlink:href="/icons/sprite.svg#quotes"></use>
+  <div class="grid grid--1x2">
+    <div class="testimonial__image">
+      <img src="/images/testimonial.jpg" alt="a happy smiling container" />
+      <span class="icon-bg icon-testimonial icon--white testimonial__icon">
+        <svg class="icon">
+          <use xlink:href="/icons/sprite.svg#quotes"></use>
+        </svg>
+      </span>
+    </div>
+    <blockquote class="quote">
+      <p class="quote__text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
+        nostrum ab culpa neque a consequatur eos illo modi pariatur. Minus.
+      </p>
+      <div class="media">
+        <div class="media__img media__testimonial">
+          <svg class="icon icon--primary">
+            <use xlink:href="/icons/sprite.svg#line"></use>
           </svg>
-        </span>
-      </div>
-    </div>
-    <div class="grid__content-two">
-      <blockquote>
-        <p class="quote__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-          nostrum ab culpa neque a consequatur eos illo modi pariatur. Minus.
-        </p>
-        <div class="media">
-          <div class="media__img media__testimonial">
-            <svg class="icon icon--primary">
-              <use xlink:href="/icons/sprite.svg#line"></use>
-            </svg>
-          </div>
-          <div class="media__body">
-            <h3>Albert John</h3>
-            <p class="quote__company">ABC Technologies</p>
-          </div>
         </div>
-      </blockquote>
-    </div>
+        <div class="media__body">
+          <h3 class="quote__author">Albert John</h3>
+          <p class="quote__company">ABC Technologies</p>
+        </div>
+      </div>
+    </blockquote>
   </div>
 </div>

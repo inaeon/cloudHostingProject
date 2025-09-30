@@ -128,7 +128,7 @@ a {
   }
 }
 
-/*Lists Section*/
+/* 1/2 Lists Section */
 .list {
   list-style: none;
   color: var(--color-headings);
@@ -152,6 +152,21 @@ a {
   margin-bottom: 2.5rem;
   font-size: 2.5rem;
 }
+
+/* 2/2 List Section - for collapsible sections*/
+
+.collapsible__list {
+  padding-left: 0;
+}
+
+.collapsible__list-item {
+  color: var(--color-body);
+}
+
+.collapsible__list-item:hover {
+  color: #fff;
+}
+
 /* Icon Sections*/
 
 .icon {
@@ -298,6 +313,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
+  width: 0;
 }
 
 .input-group .btn {
@@ -308,17 +324,15 @@ a {
 
 .card {
   width: 100vw;
-
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
-  margin-top: 2rem;
+  position: relative;
 }
 
 .card__header,
 .card__body {
   padding: 2.5rem 3rem;
-  position: relative;
 }
 
 .card--secondary {
@@ -364,6 +378,14 @@ a {
   top: -6px;
 }
 
+.card .list {
+  margin-bottom: 5rem;
+}
+
+.card--entry .list {
+  margin-bottom: 11.25rem;
+}
+
 /* Media Section*/
 
 .media {
@@ -383,7 +405,7 @@ a {
   }
 
   .testimonial {
-    width: 70vw;
+    width: 100%;
   }
 }
 
@@ -393,7 +415,9 @@ a {
   color: var(--color-body-darker);
   font-style: italic;
   font-weight: 500;
+  font-size: 2.5rem;
   line-height: 1.3;
+  padding-top: 3rem;
 }
 
 .quote__text::before {
@@ -409,46 +433,51 @@ a {
   opacity: 0.6;
 }
 
-/* Grid Section */
+@media screen and (min-width: 768px) {
+  .quote__text {
+    padding-left: 4rem;
+  }
+}
+
+/* Grid Section & Testomonial Implementation*/
 
 .grid {
   display: grid;
 }
 
-.grid__content-one,
-.grid__content-two {
+.testimonial {
   padding: 5rem;
 }
 
-.testimonial__image {
+.testimonial__image > img {
   width: 100%;
+  border-radius: 0.25rem;
 }
-.grid__content-two {
-  padding-top: 0;
-}
-.grid__content {
+
+.testimonial__image {
   position: relative;
 }
 
-.quote--testimonial {
+.testimonial__icon {
   position: absolute;
-  right: 20px;
-  top: 64px;
+  right: -32px;
+  top: 32px;
 }
 
 .media__testimonial {
-  margin-top: 0.2rem;
+  margin-top: 0.05rem;
 }
+
 @media screen and (min-width: 768px) {
   .grid--1x2 {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .grid__content-two {
-    padding-top: 8rem;
-    padding-left: 0;
-  }
+}
 
+@media screen and (min-width: 1024px) {
   .grid--1x3 {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -457,7 +486,11 @@ a {
 
 .callouts {
   border-radius: var(--border-radius);
-  padding: 5rem;
+  padding: 2.5rem;
+  width: 80vw;
+  position: absolute;
+  top: -10rem;
+  left: 10vw;
 }
 
 .callouts--primary {
@@ -481,7 +514,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .callouts .grid-1x2 {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
   }
 
   .callouts .btn {
@@ -495,7 +528,20 @@ a {
   }
 }
 
+@media screen and (min-width: 1140px) {
+  .callouts {
+    width: 60vw;
+    left: 20vw;
+  }
+}
+
 /*Collapsible Section*/
+
+.collapsible {
+  border-bottom: 1px solid #393939;
+  padding-top: 5rem;
+  padding-bottom: 2.5em;
+}
 
 .collapsible__header {
   display: flex;
@@ -506,6 +552,7 @@ a {
 .collapsible__heading {
   margin: 0;
   font-size: 3rem;
+  text-transform: capitalize;
 }
 
 .collapsible__chevron {
@@ -703,6 +750,7 @@ a {
     gap: 4rem;
   }
   .plans .card {
+    width: 100%;
     transition: transform 0.5s ease-in;
   }
   .plans .card:hover {
@@ -763,5 +811,62 @@ a {
   }
   .media-component__picture {
     justify-self: end;
+  }
+}
+
+/* footer section*/
+
+.grid--1x5 {
+  padding-top: 15rem;
+}
+
+.footer__logo {
+  width: 20rem;
+  margin-top: 5rem;
+}
+
+.footer__text {
+  color: var(--color-body);
+  font-size: 1.2rem;
+}
+
+.callout-footer {
+  margin-top: 20rem;
+  position: relative;
+}
+
+@media screen and (min-width: 1140px) {
+  .collapsible__chevron {
+    display: none;
+  }
+
+  .collapsible {
+    border: 0;
+  }
+
+  .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
+
+  .grid--1x5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    column-gap: 10rem;
+    padding: 15rem 10rem;
+  }
+
+  .collapsible__list-item {
+    font-size: 1.8rem;
+  }
+
+  .footer__image {
+    grid-row: 1/1;
+    width: 100%;
+  }
+
+  .footer__text {
+    font-size: 1.8rem;
   }
 }
