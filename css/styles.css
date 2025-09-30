@@ -1,3 +1,5 @@
+@import url(/css/normalize.css);
+
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -118,7 +120,7 @@ a {
   font-weight: 600;
 }
 
-@media and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .badges {
     font-size: 1.5rem;
   }

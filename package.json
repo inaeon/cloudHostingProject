@@ -1,0 +1,23 @@
+{
+  "name": "cloudhostingproject",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inaeon/cloudHostingProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inaeon/cloudHostingProject/issues"
+  },
+  "homepage": "https://github.com/inaeon/cloudHostingProject#readme",
+  "devDependencies": {
+    "parcel": "^2.16.0",
+    "parcel-bundler": "^1.12.5"
+  }
+}
